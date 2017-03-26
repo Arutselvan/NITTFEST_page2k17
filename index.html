@@ -4,36 +4,38 @@
   <link rel='stylesheet' href='./style.css'/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="js/main.js"></script>
   <title>NITTFEST 17</title>
 </head>
 <body>
-  <div style="position: relative;margin:0;cursor: pointer;">
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+  </div>
+  <div style="margin:0;cursor: pointer;">
     <canvas style="position: static;" id="canvas"></canvas>
     <div style="border: none" id="wrapper">
-    <img id="logo" src="./logo.png"></img>
+      <img id="logo" src="./logo.png"></img>
 
-    <div style="text-align: center;" class="row">
-      <a style="color:white" href="#"><div id="btn" class="col s6">Leaderboard</div></a>
-      <a style="color:white" href="#"><div id="btn" class="col s6">Schedule</div></a>
-    </div>
-    <div style="text-align: center;" class="row">
-      <a style="color:white" href="#"><div id="btn" class="col s6">Leaderboard</div></a>
-      <a style="color:white" href="#"><div id="btn" class="col s6">Schedule</div></a>
-    </div>
-    <div style="text-align: center;" class="row">
-      <a style="color:white" href="#"><div id="btn" class="col s12">Sponsors</div></a>
-    </div>
-
-  </div>
-  </div>
-  <div id="section2">
-    <div id="overlay"></div>
-    <div style="height: 100vh">
-      <div style="border: none" id="wrapper">
-        <h1 style="color: black">Contacts</h1>
+      <div style="text-align: center;" class="row">
+        <a style="color:white" href="#"><div id="btn" class="col s6">Leaderboard</div></a>
+        <a style="color:white" href="#"><div id="btn" class="col s6">Schedule</div></a>
+      </div>
+      <div style="text-align: center;" class="row">
+        <a style="color:white" href="#"><div id="btn" class="col s6">Leaderboard</div></a>
+        <a style="color:white" href="#"><div id="btn" class="col s6">Schedule</div></a>
+      </div>
+      <div style="text-align: center;" class="row">
+        <a style="color:white" href="#"><div id="btn" class="col s12">Sponsors</div></a>
       </div>
     </div>
-    <footer style="text-align: center;z-index: 20">© NITTFEST</footer>
   </div>
   <script type="text/javascript" src="./animation.js"></script>
 </body>
